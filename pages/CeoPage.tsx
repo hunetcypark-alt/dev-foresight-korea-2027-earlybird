@@ -8,7 +8,7 @@ export default function CeoPage() {
       <div className="wrap" style={{ paddingTop: 80, paddingBottom: 120 }}>
         <div className="ceo-layout">
           <aside className="ceo-aside">
-            <img src="/assets/img/ceo-photo.png" alt="대표이사" className="ceo-photo-img" />
+            <img src={`${import.meta.env.BASE_URL}assets/img/ceo-photo.png`} alt="대표이사" className="ceo-photo-img" />
           </aside>
           <div className="ceo-body">
             <div className="eyebrow"><span>CEO REMARKS</span></div>

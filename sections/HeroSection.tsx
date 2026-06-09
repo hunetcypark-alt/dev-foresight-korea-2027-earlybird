@@ -10,12 +10,12 @@ export default function HeroSection({ onNavigate }: Props) {
       <div id="hb">
         {/* Video background */}
         <video id="hero-video" autoPlay muted loop playsInline>
-          <source src="/assets/hero.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}assets/hero.mp4`} type="video/mp4" />
         </video>
 
         {/* FK Symbol logo */}
         <div id="lw" aria-hidden="true">
-          <img src="/assets/img/fk-symbol.svg" alt="" className="lw-img" />
+          <img src={`${import.meta.env.BASE_URL}assets/img/fk-symbol.svg`} alt="" className="lw-img" />
         </div>
 
         {/* Headline */}

@@ -19,7 +19,7 @@ export default function App() {
   useEffect(() => {
     const link = document.createElement('link')
     link.rel = 'stylesheet'
-    link.href = '/assets/styles.css'
+    link.href = `${import.meta.env.BASE_URL}assets/styles.css`
     document.head.appendChild(link)
     return () => { document.head.removeChild(link) }
   }, [])

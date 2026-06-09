@@ -12,7 +12,7 @@ export default function KeynoteSection({ onProfileClick }: Props) {
       <div className="spb-bg" aria-hidden="true" />
       <div className="kn-wave-b" aria-hidden="true" />
       <div className="spb-photo">
-        <img src="/assets/img/ceo-photo.png" alt="키노트 연사" />
+        <img src={`${import.meta.env.BASE_URL}assets/img/ceo-photo.png`} alt="키노트 연사" />
       </div>
       <div className="spb-inner">
         <div className="eyebrow spb-kn-eyebrow"><span>KEYNOTE</span></div>
