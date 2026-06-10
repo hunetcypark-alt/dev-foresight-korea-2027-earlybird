@@ -25,6 +25,7 @@ export interface Speaker {
   name?: string;         // undefined → TBD
   role?: string;
   photoUrl?: string;
+  isVideo?: boolean;
   isTbd: boolean;
   speakerBio?: string;   // 모달 연사소개 탭
   sessionDesc?: string;  // 모달 세션소개 탭

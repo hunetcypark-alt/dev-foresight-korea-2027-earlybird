@@ -10,6 +10,7 @@ import RegisterPage from './pages/RegisterPage'
 import FaqPage from './pages/FaqPage'
 import CeoPage from './pages/CeoPage'
 import EventsPage from './pages/EventsPage'
+import { useInteractions } from './hooks/useInteractions'
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageId>('home')
@@ -23,6 +24,8 @@ export default function App() {
     document.head.appendChild(link)
     return () => { document.head.removeChild(link) }
   }, [])
+
+  useInteractions(currentPage)
 
   const navigate = (page: PageId) => {
     setCurrentPage(page)

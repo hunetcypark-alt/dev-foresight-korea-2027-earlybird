@@ -8,7 +8,7 @@ interface Props {
 export default function KeynoteSection({ onProfileClick }: Props) {
   const { title, organization, name, role } = KEYNOTE_SPEAKER
   return (
-    <div className="spb spb-keynote" id="kn-banner" style={{ '--acc': '#5a8dff' } as React.CSSProperties}>
+    <div className="spb spb-keynote reveal" id="kn-banner" style={{ '--acc': '#5a8dff' } as React.CSSProperties}>
       <div className="spb-bg" aria-hidden="true" />
       <div className="kn-wave-b" aria-hidden="true" />
       <div className="spb-photo">

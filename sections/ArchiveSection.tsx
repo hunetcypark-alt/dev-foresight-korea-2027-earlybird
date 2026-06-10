@@ -13,7 +13,7 @@ export default function ArchiveSection() {
         <div className="arc-grid">
           {sorted.map((item) => (
             <a key={item.year} href={item.url} className="arc">
-              <div className="arc-yr">{item.year}</div>
+              <div className="arc-yr" style={{ fontFamily: 'Pretendard' }}>{item.year}</div>
               <div className="arc-info">
                 <div className="arc-t">{item.title}</div>
                 <div className="arc-d" style={{ fontSize: 14 }}>{item.date}</div>
