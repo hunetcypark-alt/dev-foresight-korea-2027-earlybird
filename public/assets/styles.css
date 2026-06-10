@@ -1040,6 +1040,8 @@ section#purchase,section#speakers,section#insight,section#archive{border-top:non
 .tkt[data-status="selling"] .tkt-cta{
   background:var(--brand,#3a6bff);border-color:var(--brand-glow,#5a8dff);
   box-shadow:0 8px 24px -8px rgba(58,107,255,.5)}
+.tkt[data-status="selling"] .tkt-cta::after{
+  content:'';position:absolute;inset:-500px}
 .tkt[data-status="selling"] .tkt-cta:hover{
   background:var(--brand-glow,#5a8dff);border-color:rgba(255,255,255,.4);
   box-shadow:0 14px 36px -8px rgba(58,107,255,.7)}
