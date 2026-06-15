@@ -38,7 +38,7 @@ export default function HeroSection({ onNavigate }: Props) {
             onClick={(e) => { e.preventDefault(); onNavigate?.('register') }}
             style={{ width: 402, justifyContent: 'center', padding: '16px 24px', height: 'auto', fontSize: 16 }}
           >
-            <span>사전 등록하기</span> <span className="arrow">→</span>
+            <span>등록하기</span> <span className="arrow">→</span>
           </a>
           <span
             className="chint"
