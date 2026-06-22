@@ -27,7 +27,7 @@ export default function GnbNav({ currentPage, onNavigate, onDrawerOpen }: Props)
 
   return (
     <>
-      <div id="gnb-nav" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
+      <div id="gnb-nav" style={{ backgroundColor: 'rgb(255, 255, 255)', position: 'relative' }}>
         {/* 모바일 햄버거 (PC에선 숨김) */}
         <button
           className="gn-hamburger"
