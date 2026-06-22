@@ -3852,7 +3852,7 @@ footer{padding:60px 0;border-top:1px solid var(--line-soft);
 /* ════════════════════════════════════════════════════════════
    Program Speakers — 사이드바 + 레이아웃
 ════════════════════════════════════════════════════════════ */
-.pg-tab-bar{display:flex;align-items:flex-end;gap:0;border-bottom:1px solid var(--line);margin-bottom:0}
+.pg-tab-bar{display:flex;align-items:flex-end;gap:24px;border-bottom:1px solid var(--line);margin-bottom:0}
 .pg-pdf-btn{margin-left:auto;margin-bottom:12px;display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border:1px solid var(--brand);border-radius:4px;background:#fff;color:var(--brand);font-family:var(--ko);font-size:14px;font-weight:500;text-decoration:none;white-space:nowrap;cursor:pointer;flex-shrink:0}
 .reg-mob-nav{display:none}
 .pg-sp-layout{display:grid;grid-template-columns:220px 1fr;align-items:start}
