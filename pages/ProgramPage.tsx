@@ -223,7 +223,7 @@ export default function ProgramPage() {
           <header className="pgsec-head">
             <h2 className="pgsec-title">Program &amp; Speakers</h2>
           </header>
-          <div className="pg-tabs">
+          <div className="pg-tab-bar">
             <button
               id="pg-tab-speakers"
               onClick={() => setTab('speakers')}
@@ -234,6 +234,13 @@ export default function ProgramPage() {
               onClick={() => setTab('timetable')}
               style={{ fontFamily: 'var(--ko)', fontSize: 18, fontWeight: 700, color: tab === 'timetable' ? 'var(--fg-100)' : 'var(--fg-45)', paddingBottom: 12, border: 'none', background: 'none', cursor: 'pointer', borderBottom: tab === 'timetable' ? '3px solid var(--fg-100)' : '3px solid transparent', marginBottom: -1 }}
             >타임테이블</button>
+            <a href="#" download className="pg-pdf-btn">
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 2v8M5 7.5l3 3 3-3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M2 13h12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
+              </svg>
+              타임테이블 PDF 다운로드
+            </a>
           </div>
 
           {/* 연사소개 패널 */}
