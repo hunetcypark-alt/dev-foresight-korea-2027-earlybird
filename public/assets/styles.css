@@ -3953,7 +3953,7 @@ footer{padding:60px 0;border-top:1px solid var(--line-soft);
   .pg-kn-hero-photo img{object-fit:contain;object-position:bottom center}
   .pg-kn-hero-body{padding:28px 24px}
   .pg-tab-bar{flex-wrap:wrap;gap:0;column-gap:24px}
-  .pg-pdf-btn{order:-1;margin-left:0 !important;width:100%;justify-content:center}
+  .pg-pdf-btn{order:-1;margin-left:0 !important;width:100%;justify-content:center;margin-bottom:16px}
 }
 /* 모바일: 사이드바 3열 수평 탭바 복원 */
 @media(max-width:767px){

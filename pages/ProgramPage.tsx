@@ -248,12 +248,15 @@ export default function ProgramPage() {
             <div id="pg-panel-speakers">
               <div className="pg-sp-layout">
                 <aside className="pg-sidebar" id="pg-sidebar">
-                  <a href="#pg-kn" className={`pg-sb-item pg-sb-kn${activeSection === 'pg-kn' ? ' active' : ''}`} data-section="pg-kn">KEYNOTE</a>
-                  <a href="#pg-trk-a" className={`pg-sb-item${activeSection === 'pg-trk-a' ? ' active' : ''}`} data-section="pg-trk-a">TRACK A<span>거시환경</span></a>
-                  <a href="#pg-trk-b" className={`pg-sb-item${activeSection === 'pg-trk-b' ? ' active' : ''}`} data-section="pg-trk-b">TRACK B<span>경영전략·혁신</span></a>
-                  <a href="#pg-trk-c" className={`pg-sb-item${activeSection === 'pg-trk-c' ? ' active' : ''}`} data-section="pg-trk-c">TRACK C<span>AX · Tech</span></a>
-                  <a href="#pg-trk-d" className={`pg-sb-item${activeSection === 'pg-trk-d' ? ' active' : ''}`} data-section="pg-trk-d">TRACK D<span>마케팅</span></a>
-                  <a href="#pg-trk-e" className={`pg-sb-item${activeSection === 'pg-trk-e' ? ' active' : ''}`} data-section="pg-trk-e">TRACK E<span>조직인사·리더십</span></a>
+                  <nav className="pg-sb-nav">
+                    <a href="#pg-kn" className={`pg-sb-item pg-sb-kn${activeSection === 'pg-kn' ? ' active' : ''}`} data-section="pg-kn">KEYNOTE</a>
+                    <div className="pg-sb-sep" />
+                    <a href="#pg-trk-a" className={`pg-sb-item${activeSection === 'pg-trk-a' ? ' active' : ''}`} data-section="pg-trk-a">TRACK A<span>거시환경</span></a>
+                    <a href="#pg-trk-b" className={`pg-sb-item${activeSection === 'pg-trk-b' ? ' active' : ''}`} data-section="pg-trk-b">TRACK B<span>경영전략·혁신</span></a>
+                    <a href="#pg-trk-c" className={`pg-sb-item${activeSection === 'pg-trk-c' ? ' active' : ''}`} data-section="pg-trk-c">TRACK C<span>AX · Tech</span></a>
+                    <a href="#pg-trk-d" className={`pg-sb-item${activeSection === 'pg-trk-d' ? ' active' : ''}`} data-section="pg-trk-d">TRACK D<span>마케팅</span></a>
+                    <a href="#pg-trk-e" className={`pg-sb-item${activeSection === 'pg-trk-e' ? ' active' : ''}`} data-section="pg-trk-e">TRACK E<span>조직인사·리더십</span></a>
+                  </nav>
                 </aside>
                 <div className="pg-sp-main" ref={mainRef}>
 
