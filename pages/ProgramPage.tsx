@@ -196,6 +196,7 @@ const TL_ROWS: TLRow[] = [
 export default function ProgramPage() {
   const [tab, setTab] = useState<'speakers' | 'timetable'>('speakers')
   const [activeSection, setActiveSection] = useState('pg-kn')
+  const [sidebarStuck, setSidebarStuck] = useState(false)
   const mainRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -214,6 +215,17 @@ export default function ProgramPage() {
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [tab])
+
+  useEffect(() => {
+    const tabBarEl = document.querySelector('.pg-tab-bar')
+    if (!tabBarEl) return
+    const observer = new IntersectionObserver(
+      ([entry]) => setSidebarStuck(!entry.isIntersecting),
+      { threshold: 0, rootMargin: '-1px 0px 0px 0px' }
+    )
+    observer.observe(tabBarEl)
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <div id="page-program" className="page active">
@@ -247,7 +259,7 @@ export default function ProgramPage() {
           {tab === 'speakers' && (
             <div id="pg-panel-speakers">
               <div className="pg-sp-layout">
-                <aside className="pg-sidebar" id="pg-sidebar">
+                <aside className={`pg-sidebar${sidebarStuck ? ' is-stuck' : ''}`} id="pg-sidebar">
                   <nav className="pg-sb-nav">
                     <a href="#pg-kn" className={`pg-sb-item pg-sb-kn${activeSection === 'pg-kn' ? ' active' : ''}`} data-section="pg-kn">KEYNOTE</a>
                     <div className="pg-sb-sep" />
